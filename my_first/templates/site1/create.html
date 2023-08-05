@@ -1,0 +1,16 @@
+{% extends 'site1/base1.html'%}
+{%block title%}
+Форма по добавлению статьи
+{%endblock %}
+
+{%block content%}
+<h1 align="center" >Форма по добавлению статьи</h1>
+<form method="post">
+  {%csrf_token%}
+  {{form.pole1}}<br>
+  {{form.pole2}}<br>
+  {{error}}
+  <button class="btn btn-success" type="submit">Добавить статью</button>
+</form>
+{%endblock %}
+

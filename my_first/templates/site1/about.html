@@ -1,0 +1,16 @@
+
+{% extends 'site1/base1.html'%}
+{%block title%}
+КОНТАКТЫ
+{%endblock %}
+
+{%block content%}
+<h1><b>КОНТАКТЫ</b></h1>
+{%for el in molels %}
+<div class="alert alert-warning mt-3">
+    <h3>{{el.pole1}}</h3><br>
+    <p>{{el.pole2}}</p><br>
+</div>
+{%endfor%}
+{%endblock %}
+

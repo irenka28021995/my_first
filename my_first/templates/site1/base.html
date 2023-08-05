@@ -1,0 +1,17 @@
+{% extends 'site1/base1.html'%}
+{%block title%}
+{%endblock %}
+{%block content%}
+
+<h4><b>ГЛАВНАЯ СТРАНИЦА</b></h4>
+{%for el in molels %}
+<div class="alert alert-warning mt-3">
+    <h3>{{el.pole1}}</h3>
+    <p>{{el.pole2}}</p>
+
+</div>
+{%endfor%}
+{%endblock %}
+
+
+
